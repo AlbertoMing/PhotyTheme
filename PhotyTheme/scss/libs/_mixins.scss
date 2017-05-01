@@ -1,0 +1,48 @@
+@mixin rotate($deg) {
+  transform: rotate($deg);
+  -ms-transform: rotate(#{$deg}deg);
+  -webkit-transform: rotate(#{$deg}deg);
+  -o-transform: rotate(#{$deg}deg);
+  -moz-transform: rotate(#{$deg}deg);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin selection($color-selection, $bg-selection) {
+  ::-webkit-selection{
+    color: $color-selection;
+    background: $bg-selection;
+  }
+  ::-moz-selection {
+    color: $color-selection;
+    background: $bg-selection;
+  }
+  ::selection {
+    color: $color-selection;
+    background: $bg-selection;
+  }
+}
+
+@mixin scroll-bar($width,$radius,$bg-button,$bg-track,$bg-thumb) {
+  ::-webkit-scrollbar {
+      width: $width;
+  }
+  ::-webkit-scrollbar-button {
+        background-color: $bg-button;
+  }
+  ::-webkit-scrollbar-track {
+        background-color: $bg-track;
+  }
+  ::-webkit-scrollbar-thumb {
+        background-color: $bg-thumb;
+        @include border-radius($radius);
+  }
+  ::-webkit-scrollbar-corner {
+        background-color: transparent;
+  }
+}

@@ -1,0 +1,23 @@
+#artists{
+  padding: _size(padding-bottom) 0;
+  .artist-block{
+    padding-top: _size(padding-bottom);
+    .well{
+      border-radius: _size(border-radius);
+      box-shadow: 1px 2px 8px #000;
+      .artist-img{
+        img{
+          height: 120px;
+          width: 120px;
+          margin: auto;
+          margin-top: -60px;
+          border-radius: _size(border-circle);
+          border: _palette(button-color) _size(border-width) solid;
+        }
+      }
+      h5{
+        margin: 5px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+#intro-slider{
+  .slides{
+    .slide-block{
+      .flex-caption{
+        h2{
+          font-size: 36px;
+          text-transform: uppercase;;
+        }
+        p{
+          font-size: inherit;
+        }
+      }
+    }
+  }
+  .flex-control-nav{
+    bottom: 10%;
+  }
+}
+
+#workshop-slider{
+  padding: _size(padding-bottom) 0;
+  background-image: url("../img/background/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+    .slides{
+      .slide-block{
+        .container{
+          background-color: rgba(0,0,0, 0.7);
+          border-radius: _size(border-radius);
+          box-shadow: 4px 5px 10px black;
+          color: white;
+          margin: 10px auto;
+          padding: 15px;
+        }
+      }
+    }
+    .flex-control-nav{
+      bottom: 3%;
+    }
+}

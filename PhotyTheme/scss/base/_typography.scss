@@ -1,0 +1,20 @@
+// Typography
+
+body {
+  font-family: _font(primary);
+  font-weight: _font(weight);
+  line-height: 1.42;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  margin: _size(element-margin)*2 0 _size(element-margin) 0;
+}
+
+strong, b{
+  font-weight: _font(bold);
+}

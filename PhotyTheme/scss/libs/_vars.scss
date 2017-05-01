@@ -1,0 +1,27 @@
+//Font
+$font: (
+  primary: ('Source Sans Pro', Arial, sans-serif),
+  weight: 400,
+  bold: 700
+);
+
+//Dimensions
+$size: (
+  border-radius: 5px,
+  border-width: 2px,
+  border-circle: 100%,
+  element-margin: 10px,
+  padding-bottom: 50px
+);
+
+//Palette
+$palette: (
+  bg: #257ACA,
+  bg-selection: #003991,
+  bg-thumb: red,
+  border-color: #4ae8e7,
+  button-color: #4ae8e7,
+  link-color: #04208a,
+  color-selection: white,
+  no-bg: transparent
+);

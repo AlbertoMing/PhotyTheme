@@ -1,0 +1,142 @@
+#headerMenu {
+  margin-top: _size(element-margin)*2;
+  width: 100%;
+  top:0;
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, .5);
+  .navbar {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    .navbar-header{
+      .navbar-toggle{
+        border: transparent;
+        &:hover, &:focus{
+          background-color: lighten(_palette(button-color), 30%);
+          color: white;
+        }
+      }
+      .navbar-brand{
+        float:left;
+        display:block;
+        font-size:28px;
+        font-weight: _font(bold);
+        padding-left: 0;
+        color: white;
+        &:hover, &:active{
+          color: _palette(button-color);
+        }
+      }
+    }
+    #mainMenu {
+      li {
+        a {
+          color: white;
+          position: relative;
+          font-size: 18px;
+          font-weight: 300;
+          span {
+            position: relative;
+            display: block;
+            padding-bottom:2px;
+            &:before {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              bottom: 0;
+              left: 0;
+              background-color: rgba(255, 255, 255, .5);
+              visibility: hidden;
+            }
+          }
+          &:hover{
+            color: _palette(button-color);
+            span {
+              &:before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                -moz-transform: scaleX(1);
+                -ms-transform: scaleX(1);
+                -o-transform: scaleX(1);
+                transform: scaleX(1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.navbar-fixed-top {
+    position: fixed !important;
+    background: white;
+    -webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+    -ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+    margin-top: 0;
+    top: 0;
+    .navbar-header{
+      .navbar-brand {
+        color: _palette(button-color);
+        &:hover{
+          color: _palette(link-color);
+        }
+      }
+    }
+    #mainMenu{
+      li{
+        a{
+          color: _palette(button-color);
+
+          &:hover{
+            color: _palette(link-color);
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-default{
+    border: transparent;
+    background: transparent;
+
+    @media screen and (max-width: 768px){
+      margin-top:0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px ){
+    margin-top: 0;
+    background-color: white;
+    -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+    -ms-box-shadow: 0 0 9px 0 rgba(0,0,0, .1);
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, .1);
+    .navbar-brand{
+      color: _palette(button-color) !important;
+    }
+    #mainMenu{
+      li {
+        a {
+          color: rgba(0, 0, 0, .8)!important;
+
+          &:hover {
+            color: _palette(button-color) !important;
+            opacity: .7;
+          }
+          span {
+            &:before {
+              background: transparent!important;
+            }
+          }
+        }
+        //
+      }
+    }
+  }
+
+}

@@ -1,0 +1,22 @@
+#footer{
+  padding: _size(padding-bottom)/2 0;
+  background-color: _palette(bg);
+  color: white;
+  a{
+    color: inherit;
+  }
+  .social-links, .info-links {
+    padding: 0;
+      li{
+        list-style: none;
+        margin: _size(element-margin)/2 0;
+      }
+  }
+  img{
+    padding: _size(element-margin);
+  }
+  span{
+    display: inherit;
+    margin: _size(element-margin) 0;
+  }
+}

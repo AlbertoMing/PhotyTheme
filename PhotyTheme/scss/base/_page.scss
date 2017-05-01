@@ -1,0 +1,15 @@
+// Base pagination
+
+@include selection(_palette(color-selection),_palette(bg-selection));
+
+@include scroll-bar(10px, _size(border-radius),_palette(bg),_palette(bg-selection),_palette(bg-thumb));
+
+body{
+  cursor: url("../img/cursor-normal.cur"), default;
+}
+
+hr {
+  border: 0;
+  border-bottom: solid 1px _palette(border-color);
+  margin: _size(element-margin) 0;
+}

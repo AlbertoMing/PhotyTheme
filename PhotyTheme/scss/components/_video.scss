@@ -1,0 +1,27 @@
+.watch-video {
+    box-shadow: none;
+    background: transparent;
+  	width: 100%;
+  	display: block;
+  	float: left;
+    margin: auto;
+    padding: _size(padding-bottom)*2 0 _size(padding-bottom) 0;
+  	span {
+  		display: block;
+  		margin-bottom: 20px;
+  		letter-spacing: 2px;
+  		text-transform: uppercase;
+  		font-weight: bold;
+  	}
+  	.btn-video {
+  		display: block;
+  		font-size: 20px;
+  		margin: 0 auto;
+  		line-height: 0px;
+  		display: table;
+  		text-align: center;
+      i:hover, i:focus{
+        color: _palette(link-color);
+      }
+    }
+  }

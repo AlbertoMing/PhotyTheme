@@ -1,0 +1,29 @@
+// Buttons
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button, .btn-group > .btn, .btn-group-vertical > .btn:first-child:not(:last-child) {
+  background-color: _palette(button-color);
+  @include border-radius(_size(border-radius)*2);
+  //box-shadow: 1px 4px 10px black;
+  color: inherit;
+  margin-bottom: _size(element-margin);
+  padding: 5px 10px;
+  text-decoration: none;
+  &:hover, &:active {
+    background-color: transparentize(_palette(button-color), 0.50);
+    color:_palette(link-color);
+  }
+}
+.btn-group-vertical>.btn:last-child {
+  @include border-radius(_size(border-radius));
+  border: _palette(border-color) _size(border-width) solid;
+  color: inherit;
+  margin-bottom: _size(element-margin);
+  padding: 5px 10px;
+  &:hover, &:active{
+    background-color: _palette(button-color);
+    color: _palette(link-color);
+  }
+}

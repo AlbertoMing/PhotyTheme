@@ -1,0 +1,24 @@
+    //Or
+    //  @function _misc($key) {
+    //    @if map-has-key($misc, $key) {
+    //       @return map-get($misc, $key);
+    //     }
+    //
+    //     @warn "Unknown `#{$key}` in $misc.";
+    //     @return null;
+    //   }
+
+//Get size values.
+@function _size($keys...){
+  @return map-get($size, $keys...);
+}
+
+//Get font values.
+@function _font($keys...){
+  @return map-get($font, $keys...);
+}
+
+//Get palette values.
+@function _palette($keys...){
+  @return map-get($palette, $keys...);
+}

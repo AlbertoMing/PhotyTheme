@@ -1,0 +1,39 @@
+1. index.html
+    riga 57 mettere il file respond.js e usarlo
+2. index.html
+   fare l header
+3. add flexslider.css and js in the project
+4. add modernizr.js in the folder js/
+5. add google analytics js
+6. nella sezione feature centrare bene le icone provare i font-awesome
+7.{
+    height: 120px;
+    margin: auto;
+    margin-top: -60px;
+    border-radius: 100%;
+    border: #4ae8e7 2px solid;
+}  for img dentro il tag con classe artist-img
+8. per cambiare il cursore
+    body{
+    cursor: url("INDIRIZZO_DEL_CURSORE"), default;//formato .cur .png
+    }
+9. lo scroll bar
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    ::-webkit-scrollbar-track {
+          background-color: #666666;
+    } /* colore di sfondo delle scrollbar */
+
+    ::-webkit-scrollbar-thumb {
+          background-color: #b91515;
+    }
+
+    ::-webkit-scrollbar-button {
+          background-color: #7c2929;
+    } /* codice per personalizzare i bottoni alle estremità delle scrollbars */
+
+    ::-webkit-scrollbar-corner {
+          background-color: black;
+    } /* se sia il verticale e le barre orizzontali appaiono, probabilmente l'angolo in basso a destra ha anche bisogno di avere uno stile */

@@ -1,0 +1,19 @@
+#blog{
+  padding: _size(padding-bottom) 0;
+  .post-block{
+    img{
+      border-radius: _size(border-radius);
+    }
+    .post-info{
+      .post-link{
+        &:hover,&:active{
+          text-decoration: none;
+          color: _palette(link-color);
+        }
+      }
+      ul:first-child{
+        float: left;
+      }
+    }
+  }
+}

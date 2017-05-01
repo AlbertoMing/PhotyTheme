@@ -1,0 +1,11 @@
+#photowalk{
+  padding: _size(padding-bottom) 0;
+  .walk-block{
+      .walk-link{
+        &:hover,&:active{
+          text-decoration: none;
+          color: _palette(link-color);
+        }
+    }
+  }
+}
